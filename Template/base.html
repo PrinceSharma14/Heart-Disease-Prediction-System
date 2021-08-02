@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <div id="box-2">
+        <ul id='nav'>
+            <div class="header">
+                <li><a href="{% url 'index' %}" class="active">HOME</a></li>
+                <div class="header-right">
+                    <li><a href="{% url 'Type' %}">TYPES OF HEART
+                            DISEASE</a></li>
+                    <li><a href="{% url 'Prevention' %}" class="ab1">PREVENTION</a></li>
+                    <li><a href="#" class="ab">SYMPTOMS</a></li>
+                    <li><a href="#" class="ab">TREATMENT</a></li>
+                    <li><a href="#" class="ab">CAUSES</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

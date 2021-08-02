@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Detection</title>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'CSS/index.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+   
+    <div id="box-2">
+        <ul id='nav'>
+            <div class="header">
+                <li><a href="{% url 'index' %}" >HOME</a></li>
+                <div class="header-right">
+                    <li><a href="{% url 'Type' %}">TYPES OF HEART
+                            DISEASE</a></li>
+                    <li><a href="{% url 'Prevention' %}">PREVENTION</a></li>
+                    <li><a href="{% url 'Symptoms' %}">SYMPTOMS</a></li>
+                    <li><a href="{% url 'Treatment' %}">TREATMENT</a></li>
+                    <li><a href="{% url 'Causes' %}" class="active">CAUSES</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+
+    
+</body>
+
+</html>

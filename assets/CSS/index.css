@@ -1,0 +1,153 @@
+body{
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;   
+}
+@media screen and (max-width:10000px){
+    .resize{
+        animation: f 5s  0s infinite forwards;
+    }
+}
+@keyframes f{
+     form{
+            width: 0px;
+            color: yellow;
+     }
+     to{
+            width: 500px;
+            color: turquoise;
+    }
+}
+#box-1{
+    float: left;
+    margin-left: 7px;
+}
+#box-2{
+    margin-top: 0px;
+    margin-left: 290px;
+}
+img{
+    width: 100px;
+    height: 60px;
+    margin-top: 7px;
+    margin-left: 70px;
+}
+#box-3{
+    border-color: rgb(105, 233, 255);
+    float: right;
+}
+#box-4{
+    margin-top: 5vh;
+    margin-left: 166vh;
+    border-color: rgb(105, 233, 255);
+    
+}
+#date{
+    color:cyan;
+    border: .42vh solid rgb(38, 255, 244);
+    border-radius: 3vh;
+    font-family:Algerian ;
+    font-size: 2.7vh;
+    padding: 3vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-right: 100vh;
+}
+ul{
+    background-color:transparent;
+    border: 2px solid rgb(118, 245, 245);
+    border-radius: 30px;
+    width: 700px;
+    margin-top: 0px;
+    align-content: center;
+}
+#nav{
+    background-color: orange;
+    position: fixed;
+    top: 3px;
+}
+li {
+    float: left;
+    list-style: none;
+    margin: 12px 18px;
+}
+li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(47, 240, 29);
+    font-weight: bold;
+    font-size: 16px;
+    font-family:Baskerville Old Face ;
+}
+.ab{
+    color: rgb(27, 121, 18);
+}
+p{
+    font-size: 30px;
+    color: turquoise;
+    font-family:Algerian;
+}
+button{
+    width:180px;
+    height: 30px;
+    background-color: rgb(64, 213, 233);
+    border:2px solid rgb(193, 230, 248);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Baskerville Old Face;
+}
+button:hover{
+    background-color: rgb(255, 0, 0);
+}
+li a:hover, li a.active{
+    color: hotpink;
+    text-decoration: underline;
+}
+form{
+    width: 500px;
+    height: 2000px;
+    background-color:transparent ;
+   position: absolute;
+   left: 700px;
+   top: 100px;
+   margin:3px;
+   color: turquoise;   
+}
+legend {
+    
+	background-color: rgba(9, 252, 9, 0.904);
+	color: indigo;
+	text-decoration: underline;
+	font-style:italic;
+	font-weight: bolder;
+    text-align: left;
+    width: 60%;
+    
+}
+label{
+    margin-top: 7px;
+    width: 100px;
+}
+input{
+    margin-top: 7px;
+    width: 70%;
+}
+.weight{
+    width: 50%;
+}
+fieldset{
+    border: 2px solid red;
+}
+.gen{
+    color: rgb(212, 55, 233);
+    width: 18px;
+}
+.sub{
+    margin-top: 10px;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}

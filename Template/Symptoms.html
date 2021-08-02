@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Detection</title>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'CSS/Symptoms.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+   
+    <div id="box-2">
+        <ul id='nav'>
+            <div class="header">
+                <li class="list"><a href="{% url 'index' %}" >HOME</a></li>
+                <div class="header-right">
+                    <li class="list"><a href="{% url 'Type' %}">TYPES OF HEART
+                            DISEASE</a></li>
+                    <li class="list"><a href="{% url 'Prevention' %}">PREVENTION</a></li>
+                    <li class="list"><a href="{% url 'Symptoms' %}" class="active">SYMPTOMS</a></li>
+                    <li class="list"><a href="{% url 'Treatment' %}">TREATMENT</a></li>
+                    <li class="list"><a href="{% url 'Causes' %}">CAUSES</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+    
+    <img src="{% static 'Images/img9.png' %}">
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        
+        <h1 style="font-family: sofia;">Symptoms</h1>
+    </nav>
+    
+
+<h3 class="navbar navbar-dark bg-danger">Symptoms of heart disease in your blood vessels</h3>
+
+<p>A buildup of fatty plaques in your arteries, or atherosclerosis (ath-ur-o-skluh-ROE-sis) can damage your blood vessels and heart. Plaque buildup causes narrowed or blocked blood vessels that can lead to a heart attack, chest pain (angina) or stroke.</p>
+
+<p>Coronary artery disease symptoms may be different for men and women. For instance, men are more likely to have chest pain. Women are more likely to have other signs and symptoms along with chest discomfort, such as shortness of breath, nausea and extreme fatigue.</p>
+
+<p>Signs and symptoms can include:</p>
+
+<ul>
+    <li>Chest pain, chest tightness, chest pressure and chest discomfort (angina)</li>
+    <li>Pain, numbness, weakness or coldness in your legs or arms if the blood vessels in those parts of your body are narrowed</li>
+    <li>Pain in the neck, jaw, throat, upper abdomen or back</li>
+    <li>Shortness of breath</li>
+  </ul>
+
+<p>You might not be diagnosed with coronary artery disease until you have a heart attack, angina, stroke or heart failure. It's important to watch for cardiovascular symptoms and discuss concerns with your doctor. Cardiovascular disease can sometimes be found early with regular evaluations.</p>
+
+<h3 class="navbar navbar-dark bg-danger">Heart disease symptoms caused by abnormal heartbeats (heart arrhythmias)</h3>
+<h4>Your heart may beat too quickly, too slowly or irregularly. Heart arrhythmia signs and symptoms can include:</h4>
+<ul>
+    <li>Fluttering in your chest</li>
+    <li>Racing heartbeat (tachycardia)</li>
+    <li>Slow heartbeat (bradycardia)</li>
+    <li>Chest pain or discomfort</li>
+    <li>Shortness of breath</li>
+    <li>Lightheadedness</li>
+    <li>Dizziness</li>
+    <li>Fainting (syncope) or near fainting</li>
+  </ul>
+
+  <h3 class="navbar navbar-dark bg-danger">Heart disease symptoms caused by heart defects</h3>
+<p>Serious heart defects that you're born with (congenital heart defects) usually are noticed soon after birth. Heart defect signs and symptoms in children could include:</p>
+<ul>
+    <li>Pale gray or blue skin color (cyanosis)</li>
+    <li>Swelling in the legs, abdomen or areas around the eyes</li>
+    <li>In an infant, shortness of breath during feedings, leading to poor weight gain</li>
+</ul>
+
+<p>
+Less serious congenital heart defects are often not diagnosed until later in childhood or during adulthood. Signs and symptoms of congenital heart defects that usually aren't immediately life-threatening include:</p>
+
+<ul>
+    <li>Easily getting short of breath during exercise or activity</li>
+    <li>Easily tiring during exercise or activity</li>
+    <li>Swelling in the hands, ankles or feet</li>
+</ul>
+
+<h3 class="navbar navbar-dark bg-danger">Heart disease symptoms caused by diseased heart muscle (cardiomyopathy)</h3>
+<p>In early stages of cardiomyopathy, you may have no symptoms. As the condition worsens, symptoms may include:</p>
+
+<ul>
+    <li>Breathlessness with activity or at rest</li>
+    <li>Swelling of the legs, ankles and feet</li>
+    <li>Fatigue</li>
+    <li>Irregular heartbeats that feel rapid, pounding or fluttering</li>
+    <li>Dizziness, lightheadedness and fainting</li>
+</ul>
+
+<h3 class="navbar navbar-dark bg-danger">Heart disease symptoms caused by heart infection</h3>
+<p>Endocarditis is an infection that affects the inner lining of your heart chambers and heart valves (endocardium). Heart infection signs and symptoms can include:</p>
+<ul>
+    <li>Fever</li>
+    <li>Shortness of breath</li>
+    <li>Weakness or fatigue</li>
+    <li>Swelling in your legs or abdomen</li>
+    <li>Changes in your heart rhythm</li>
+    <li>Dry or persistent cough</li>
+    <li>Skin rashes or unusual spots</li>
+</ul>
+
+<h3 class="navbar navbar-dark bg-danger">Heart disease symptoms caused by heart valve problems (valvular heart disease)</h3>
+<p>The heart has four valves — the aortic, mitral, pulmonary and tricuspid valves — that open and close to direct blood flow through your heart. Many things can damage your heart valves, leading to narrowing (stenosis), leaking (regurgitation or insufficiency) or improper closing (prolapse).</p>
+
+<p>Depending on which valve isn't working properly, valvular heart disease signs and symptoms generally include:</p>
+
+<ul>
+    <li>Fatigue</li>
+    <li>Shortness of breath</li>
+    <li>Irregular heartbeat</li>
+    <li>Swollen feet or ankles</li>
+    <li>Chest pain</li>
+    <li>Fainting (syncope)</li>
+    
+</ul>
+    
+</body>
+
+</html>

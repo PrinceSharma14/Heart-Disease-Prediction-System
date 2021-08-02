@@ -1,0 +1,146 @@
+<!-- This is GUI for Heart disease Detection Application Using Machine Learning Classifer -->
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Detection</title>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'CSS/index.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <div id="box-2">
+        <ul id='nav'>
+            <div class="header">
+                <li><a href="{% url 'index' %}" class="active">HOME</a></li>
+                <div class="header-right">
+                    <li><a href="{% url 'Type' %}">TYPES OF HEART
+                            DISEASE</a></li>
+                    <li><a href="{% url 'Prevention' %}">PREVENTION</a></li>
+                    <li><a href="{% url 'Symptoms' %}">SYMPTOMS</a></li>
+                    <li><a href="{% url 'Treatment' %}">TREATMENT</a></li>
+                    <li><a href="{% url 'Causes' %}">CAUSES</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+
+    <img src="{% static 'Images/img3.jpg' %}">
+    <form method="post" action="predictHD">
+        <fieldset>
+            <legend>Check Your Heart!</legend>
+
+            {% csrf_token %}
+            
+            <br>
+            <label for="name">Name:-</label><input type="text" name="name" placeholder="Enter your Name"
+                required="required" /><br>
+            <label for="age">Age:-</label><input type="text" name="age" placeholder="Enter your age"
+                required="required" /><br>
+            <!-- <input type="radio"  name="radoption" value=" 1">Male
+            <input type="radio"  name="radoption" value=" 2">Female -->
+            <label class="lb" for="trestbps">trestbps:-</label><input type="text" name="trestbps"
+                placeholder="Enter  resting blood pressure in mm Hg" required="required" />
+            <br>
+
+            <label for="chol">chol:-</label><input type="text" name="chol"
+                placeholder="Enter serum cholestoral in mg/dl" required="required" /><br>
+
+            <label for="thalach">Thalach:-</label><input type="text" name="thalach"
+                placeholder="Enter maximum heart rate achieved" required="required" />
+            <br>
+
+            <label for="oldpeak">Oldpeak:-</label><input type="text" name="oldpeak"
+                placeholder="Enter depression induced by activity" required="required" />
+            <br>
+
+            <label for="sex">Sex:-</label><input type="text" name="sex" placeholder="sex" required="required" /><br>
+            <!-- <label for="sex_0">Sex_0:-</label><input type="number" name="sex_0" placeholder="sex_0" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="sex_1">Sex_1:-</label><input type="number" name="sex_1" placeholder="sex_1" -->
+            <!-- required="required" /><br> -->
+
+
+            <label for="cp">CP:-</label><input type="number" name="cp" placeholder="cp" required="required" /><br>
+            <!-- <label for="cp_0">CP_0:-</label><input type="number" name="cp_0" placeholder="cp_0" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="cp_1">CP_1:-</label><input type="number" name="cp_1" placeholder=" cp_1" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="cp_2">CP_2:-</label><input type="number" name="cp_2" placeholder="cp_2" required="required" /> -->
+            <!-- <br> -->
+            <!-- <label for="cp_3">CP_3:-</label><input type="number" name="cp_3" placeholder=" cp_3" -->
+            <!-- required="required" /><br> -->
+
+            <label for="fbs_0">FBS_0:-</label><input type="number" name="fbs_0" placeholder="fbs_0"
+                required="required" /><br>
+
+            <label for="restecg">Restecg:-</label><input type="number" name="restecg" placeholder="Enter Rest ECG"
+                required="required" /><br>
+            <!-- <label for="restecg_0">Restecg_0:-</label><input type="number" name="restecg_0" placeholder="restecg_0" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="restecg_1">Restecg_1:-</label><input type="number" name="restecg_1" placeholder="restecg_1" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="">Restecg_2:-</label><input type="number" name="restecg_2" placeholder="restecg_2" -->
+            <!-- required="required" /><br> -->
+
+
+            <label for="exang">Exang:-</label><input type="number" name="exang" placeholder="exang"
+                required="required" /><br>
+            <!-- <label for="exang_0">Exang_0:-</label><input type="number" name="exang_0" placeholder="exang_0" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="exang_1">Exang_1:-</label><input type="number" name="exang_1" placeholder="exang_1" -->
+            <!-- required="required" /><br> -->
+
+            <label for="slope">Slope:-</label><input type="number" name="slope" placeholder="slope"
+                required="required" /><br>
+            <!-- <label for="slope_0">Slope_0:-</label><input type="number" name="slope_0" placeholder="slope_0" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="slope_1">Slope_1:-</label><input type="number" name="slope_1" placeholder="slope_1" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="slope_2">Slope_2:-</label><input type="number" name="slope_2" placeholder="slope_2" -->
+            <!-- required="required" /><br> -->
+
+            <label for="ca">CA:-</label><input type="number" name="ca" placeholder=" ca" required="required" /><br>
+            <!-- <label for="ca_0">CA_0:-</label><input type="number" name="ca_0" placeholder=" ca_0" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="ca_1">CA_1:-</label><input type="number" name="ca_1" placeholder="ca_1" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="ca_2">CA_2:-</label><input type="number" name="ca_2" placeholder="ca_2" -->
+            <!-- required="required" /><br> -->
+
+            <label for="thal">Thal:-</label><input type="number" name="thal" placeholder="thal"
+                required="required" /><br>
+            <!-- <label for="thal_1">Thal_1:-</label><input type="number" name="thal_1" placeholder="thal_1" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="thal_2">Thal_2:-</label><input type="number" name="thal_2" placeholder="thal_2" -->
+            <!-- required="required" /><br> -->
+            <!-- <label for="thal_3">Thal_3:-</label><input type="number" name="thal_3" placeholder="thal_3" -->
+            <!-- required="required" /><br> -->
+
+            <br>
+
+            <!-- Show button -->
+            <div class="button_cont" align="center">
+                <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict Heart
+                        disease</strong></button></a>
+            </div>
+        </fieldset>
+    </form>
+    {% if d1.name %}
+    <div class="col-xs-1 text-center">
+        <div id="ans" class="p-2">{{d1.name}} {{d1.msg}}</div>
+    </div>
+    {% endif %}
+    </div>
+    <!-- {{ temp }} -->
+</body>
+
+</html>

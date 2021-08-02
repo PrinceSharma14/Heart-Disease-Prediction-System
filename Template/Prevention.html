@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevention</title>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'CSS/Prevention.css' %}">
+</head>
+
+<body>
+    <div id="box-2">
+        <ul id='nav'>
+            <div class="header">
+                <li><a href="{% url 'index' %}">HOME</a></li>
+                <div class="header-right">
+                    <li><a href="{% url 'Type' %}">TYPES OF HEART
+                            DISEASE</a></li>
+                    <li><a href="{% url 'Prevention' %}" class="active">PREVENTION</a></li>
+                    <li><a href="{% url 'Symptoms' %}">SYMPTOMS</a></li>
+                    <li><a href="{% url 'Treatment' %}">TREATMENT</a></li>
+                    <li><a href="{% url 'Causes' %}">CAUSES</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <img src="{% static 'Images/img4.jpg' %}">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <h1 >Prevention Of Heart Disease</h1>
+    </nav>
+
+    <h2 class="navbar navbar-dark bg-danger">Some lifestyle measures can help reduce the risk of heart disease. These include:</h2>
+
+    <p><b>Eating a balanced diet:</b> Opt for a heart-healthy diet that is rich in fiber and favors whole grains and fresh fruits and vegetables. Also, it may help to limit the intake of processed foods and added fat, salt, and sugar.
+    </p>
+    <p><b>Exercising regularly:</b> This can help strengthen the heart and circulatory system, reduce cholesterol, and maintain
+        blood pressure.</p>
+    <p><b>Maintaining a moderate body weight:</b> A person can check their body mass index (BMI) here.</p>
+    <p><b>Quitting or avoiding smoking:</b> Smoking is a major risk factor for heart and cardiovascular conditions.</p>
+    <p><b>Limiting alcohol intake:</b> Females should consume no more than one standard drinkTrusted Source per day, and males
+        should consume no more than two standard drinks per day.</p>
+    <p><b>Managing underlying conditions:</b> Seek treatment for conditions that affect heart health, such as high blood
+        pressure, obesity, and diabetes.</p>
+    <p>Taking these steps can help boost overall health and reduce the risk of heart disease and its complications.</p>
+
+
+
+</body>
+
+</html>

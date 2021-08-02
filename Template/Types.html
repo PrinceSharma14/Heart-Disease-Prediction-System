@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Of Heart Disease</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'CSS/Types.css' %}">
+</head>
+
+<body>
+
+    <div id="box-2">
+        <ul id='nav'>
+            <div class="header">
+                <li><a href="{% url 'index' %}">HOME</a></li>
+                <div class="header-right">
+                    <li><a href="{% url 'Type' %}" class="active">TYPES OF HEART
+                            DISEASE</a></li>
+                    <li><a href="{% url 'Prevention' %}">PREVENTION</a></li>
+                    <li><a href="{% url 'Symptoms' %}">SYMPTOMS</a></li>
+                    <li><a href="{% url 'Treatment' %}">TREATMENT</a></li>
+                    <li><a href="{% url 'Causes' %}">CAUSES</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <img src="{% static 'Images/img2.png' %}">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+        <h1>Types Of Heart Disease</h1>
+    </nav>
+    <p>
+        There are several different types of heart disease, and they affect the heart in different ways.
+
+        The sections below will look at some different types of heart disease in more detail.
+    </p>
+    <h2 class="navbar navbar-dark  bg-danger">Coronary artery disease</h2>
+    <p>
+        Coronary artery disease, also known as coronary heart disease, is the most common type of heart disease.
+
+        It develops when the arteries that supply blood to the heart become clogged with plaque. This causes them to
+        harden and narrow. Plaque contains cholesterol and other substances.
+
+        As a result, the blood supply reduces, and the heart receives less oxygen and fewer nutrients. In time, the
+        heart muscle weakens, and there is a risk of heart failure and arrhythmias.
+
+        When plaque builds up in the arteries, this is called atherosclerosis.
+    </p>
+    <h2 class="navbar navbar-dark bg-danger">Congenital heart defects</h2>
+    <p>
+        A person with a congenital heart defect is born with a heart problem. There are many types of congenital heart
+        defect, including:
+
+        Abnormal heart valves: Valves may not open properly or may leak blood.
+        Septal defects: There is a hole in the wall between either the lower chambers or the upper chambers of the
+        heart.
+        Atresia: One of the heart valves is missing.
+        Congenital heart disease can involve major structural issues, such as the absence of a ventricle and problems
+        with the main arteries that leave the heart.
+
+        Many congenital heart problems do not cause any noticeable symptoms and only become apparent during a routine
+        medical check.
+
+        According to the American Heart Association (AHA), heart murmurs often affect children, but only some are due to
+        a defect.
+    </p>
+    <h2 class="navbar navbar-dark bg-danger">Arrhythmia</h2>
+    <p>
+        Arrhythmia refers to an irregular heartbeat. It occurs when the electrical impulses that coordinate the
+        heartbeat do not work properly. As a result, the heart may beat too fast, too slowly, or erratically.
+
+        There are various types of arrhythmia, including:
+
+        Tachycardia: This refers to a rapid heartbeat.
+        Bradycardia: This refers to a slow heartbeat.
+        Premature contractions: This refers to an early heartbeat.
+        Atrial fibrillation: This is a type of irregular heartbeat.
+        A person may notice a feeling like a fluttering or a racing heart.
+
+        Brief changes in heart rhythm are not a cause for concern, but treatment will be necessary if they persist, as
+        this can affect the heart’s function.
+    </p>
+</body>
+
+</html>

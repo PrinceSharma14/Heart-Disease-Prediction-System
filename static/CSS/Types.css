@@ -1,0 +1,122 @@
+
+#box-2{
+    margin-top: 0px;
+    margin-left: 290px;
+}
+img{
+    
+    margin-top: 90px;
+    margin-left: 70px;
+}
+
+ul{
+    background-color:transparent;
+    border: 2px solid rgb(118, 245, 245);
+    border-radius: 30px;
+    width: 850px;
+    margin-top: 0px;
+    align-content: center;
+}
+#nav{
+    background-color: whitesmoke;
+    position: fixed;
+    top: 3px;
+}
+li {
+    float: left;
+    list-style: none;
+    z-index: 1;
+    margin: 10px 10px;
+}
+li a{
+    /* padding: 3px 3px; */
+    text-decoration: none;
+    color: rgb(99, 0, 145);
+    font-weight: bold;
+    font-size: 16px;
+    font-family:Baskerville Old Face ;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(7, 82, 74);
+    font-family:Andika;
+    font-style: italic;
+}
+button{
+    width:180px;
+    height: 30px;
+    background-color: rgb(64, 213, 233);
+    border:2px solid rgb(193, 230, 248);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Baskerville Old Face;
+}
+button:hover{
+    background-color: rgb(255, 251, 0);
+}
+li a:hover, li a.active{
+    color: hotpink;
+    text-decoration: underline;
+}
+form{
+    
+    width: 500px;
+    height: 2000px;
+    background-color:transparent ;
+   position: absolute;
+   left: 700px;
+   top: 100px;
+   margin:3px;
+   color: turquoise;   
+}
+legend {
+    
+	background-color: rgba(9, 252, 9, 0.904);
+	color: indigo;
+	text-decoration: underline;
+	font-style:italic;
+	font-weight: bolder;
+    text-align: left;
+    width: 60%;
+    
+}
+label{
+    margin-top: 7px;
+    width: 100px;
+}
+input{
+    margin-top: 7px;
+    width: 70%;
+}
+.weight{
+    width: 50%;
+}
+fieldset{
+    border: 2px solid red;
+}
+.gen{
+    color: rgb(212, 55, 233);
+    width: 18px;
+}
+.sub{
+    margin-top: 10px;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+h1{
+    transition: all;
+    color:mediumblue;
+    font-family: sofia;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Charm';
+    font-weight: bold;
+    
+}
